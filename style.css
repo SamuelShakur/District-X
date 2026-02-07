@@ -9,33 +9,71 @@
             background-color: #f4f4f4;
             color: #333;
         }
-#span1{
-  display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-.comp-name{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+      
 
 
      @media screen and (max-width: 600px) {
         header {
-            background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 10PX;
             text-align: center;
-            font-size: px;
+            background-attachment: fixed;
         }
-         
+              
+        .navbar-collapse {
+                    background-color: white;
+                    width: 100%;
+                    padding: 10px;
+                    margin-left: -10%;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 1000;
+                   
+                }
+               
+                .navbar-nav {
+                    width: 100%;
+                    padding-right: 20%;
+                }
+              
+        
+                
         .logo img{
-            width: 30px;
+            width: 35px;
             height: auto;
         }
-        
+        #span1{
+            color: black;
+            display: grid;
+             justify-content: center;
+               align-items: center;
+                text-align: left;
+        }
+                .comp-name {
+                    display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    gap: 10px;
+                }
+    #tag-name {
+        font-size: 16px;
+        font-weight: bold;
+       
+                                  }
+   #tagline {
+        font-size: 12px;
+        margin-top: -8px;
+   }
+
+.forgap{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
      }
 
      @media screen and (min-width: 992px) {
