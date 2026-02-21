@@ -9,7 +9,14 @@
             background-color: #f4f4f4;
             color: #333; 
             text-align: center;
+            background-image: url('assets/logo/logo.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit:cover;
+            margin-left: 100%;
+
         }
+        
       
 
 
