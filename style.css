@@ -1,23 +1,34 @@
          * { margin: 0;
             padding: 0;
             box-sizing: border-box;
+            color:white;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333; 
-            text-align: center;
-            background-image: url('assets/logo/logo.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            object-fit:cover;
-            margin-left: 100%;
-
-        }
+                body {
+                    margin: 0;
+                    position: relative;
+                }
         
-      
+                body::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    /* will stretch with body */
+                    background-image: url("assets/clothes/bg.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    object-fit: contain;
+                    filter: blur(8px);
+                    z-index: -1;
+                }
+    html,body{
+        min-height: 100%;
+    }
+
 
 
      @media screen and (max-width: 600px) {
