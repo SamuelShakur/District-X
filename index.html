@@ -23,41 +23,46 @@
 </head>
 <body>
     <header>
-<div class="forgap">
-       <div class="comp-name">
-           <picture class="logo">
-                <source srcset="assets/logo/logo.png" type="image/png">
-                <img src="assets/logo/logo.png" alt="District X Logo">
-            </picture>
 
-        <div id="span1">
-            <span id="tag-name">
-                District X
-            </span>
-            <span id="tagline">
-               Online Shopping
-            </span>
-        </div>
-</div>
-   
-    <nav class="navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: -10%;">
-                <span class="navbar-toggler-icon" style="font-size: 12px; " ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Men's</a>
-                    <a class="nav-link" href="#">Women's</a>
-                    <a class="nav-link" href="#">Kids</a>
+        <nav class="nav">
+            <div class="container" style="display: flex; justify-content: space-between;" >
+                <div class="logo">
+                    <a href="#">DISTRICT X</a>
                 </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
             </div>
-        </div>
-    </nav>
-
-    </div>
+        </nav>
+        
+        <section class="home">
+        </section>
+        
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+        
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
         
     </header>
 
