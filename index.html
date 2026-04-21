@@ -25,16 +25,16 @@
     <header>
 
         <nav class="nav">
-            <div class="container" style="display: flex; justify-content: space-between;" >
-                <div class="logo">
-                    <a href="#">DISTRICT X</a>
+            <div class="container" id="X_name" style="display: flex; justify-content: space-between; scroll-behavior: smooth;" >
+                <div class="logo" >
+                    <a href="#movedToLink" > <P>DISTRICT X</P></a>
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <span class="navTrigger">
@@ -44,8 +44,14 @@
                 </span>
             </div>
         </nav>
+       
         
         <section class="home">
+
+            <div class="home-content">
+                <h1>Your Heading Here</h1>
+                <p>Your subtitle or description here</p>
+            </div>
         </section>
         
         <!-- Jquery needed -->
@@ -63,12 +69,12 @@
                 }
             });
         </script>
-        
+         
     </header>
 
 
 <!-- Featured 1-->
-<section class="py-3 py-md-5 py-xl-8 bg-light">
+<section class="py-3 py-md-5 py-xl-8 bg-light" id="movedToLink">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -424,8 +430,8 @@
                                                     </div>
                                                     <div>
                                                         <h4 class="mb-3 text-light">Address</h4>
-                                                        <address class="mb-0 text-light opacity-75">8014 Edith Blvd NE,
-                                                            Albuquerque, New York, United States</address>
+                                                        <address class="mb-0 text-light opacity-75">Atta Poku Mensah Street,
+                                                            Trade Union Congress, Kumasi, Ghana</address>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-4 mb-xxl-5">
@@ -443,7 +449,7 @@
                                                                 <h4 class="mb-3 text-light">Phone</h4>
                                                                 <p class="mb-0">
                                                                     <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
-                                                                        href="tel:+15057922430">(505) 792-2430</a>
+                                                                        href="tel:+15057922430">(233) 2011-50646</a>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -464,7 +470,7 @@
                                                                 <h4 class="mb-3 text-light">E-Mail</h4>
                                                                 <p class="mb-0">
                                                                     <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
-                                                                        href="mailto:demo@yourdomain.com">demo@yourdomain.com</a>
+                                                                        href="mailto:demo@yourdomain.com">lastdeathr@gmail.com</a>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -575,5 +581,18 @@
 
 <!-- project scripts -->
 <script src="script.js"></script>
+
+<footer class="py-3 py-md-5 py-xl-8 bg-dark text-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2024 District X. All rights reserved.</p>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a href="#" class="text-light text-decoration-none me-3"> </a>
+                <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
