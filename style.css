@@ -1,6 +1,7 @@
          * { margin: 0;
             padding: 0;
             box-sizing: border-box;
+            overflow-x: hidden;
            
            
         }
@@ -36,6 +37,10 @@
 
 
      @media screen and (max-width: 768px) {
+        body {
+                overflow-x: hidden;
+            }
+
         header {
             background-color: transparent;
             color: #fff;
@@ -77,6 +82,7 @@
      }
 
      @media screen and (min-width: 769px) {
+       
         header {
             /* transparent navbar */
             background-color: transparent;
