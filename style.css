@@ -85,14 +85,12 @@
         header {
             /* transparent navbar */
            
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.4.1&auto=format&fit=crop&w=1500&q=80);
                 background-blend-mode: darken;
                 background-color: rgba(0, 0, 0, 0.25);
-               
-                background-position: center top;
+                background-position: center;
                 background-size: cover;
                 background-attachment: fixed;
-                
                 justify-content: center;
                 align-items: center;
                 text-align: center;
@@ -252,22 +250,21 @@ nav {
     line-height: 30px;
     text-align: center;
     padding-left: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: #fff;
-    
-}
-
-.nav div.logo a {
+    font-weight: 700;
+    letter-spacing: 2px;
     transition: all 0.3s ease;
 }
 
 .nav div.logo a:hover {
     color: #FF6B9D;
-    text-shadow: 0 0 10px rgba(255, 107, 157, 0.5);
+    text-shadow: 0 0 15px rgba(255, 107, 157, 0.6);
     transform: scale(1.05);
 }
 
@@ -299,7 +296,9 @@ nav {
     line-height: 65px;
     font-size: 2.4rem;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .nav div.main_list ul li a::after {
@@ -308,15 +307,15 @@ nav {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 3px;
+    height: 2px;
     background: linear-gradient(90deg, #FF6B9D, #FFD93D);
-    transition: width 0.3s ease;
+    transition: width 0.4s ease;
 }
 
 .nav div.main_list ul li a:hover {
     color: #FFD93D;
-    text-shadow: 0 0 15px rgba(255, 217, 61, 0.6);
-    transform: translateY(-5px);
+    text-shadow: 0 0 12px rgba(255, 217, 61, 0.5);
+    transform: translateY(-3px);
 }
 
 .nav div.main_list ul li a:hover::after {
@@ -329,7 +328,7 @@ nav {
 @keyframes slideDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
     to {
         opacity: 1;
@@ -342,7 +341,7 @@ nav {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-4px);
     }
 }
 
@@ -350,7 +349,7 @@ nav {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(40px);
     }
     to {
         opacity: 1;
@@ -384,7 +383,7 @@ nav {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
      background-blend-mode: darken;
      background-color: rgba(0,0,0,0.25);
-     background-attachment: fixed;
+     background-attachment: scroll;
      background-position: center top;
      background-size: cover;
      display: flex;
@@ -410,17 +409,19 @@ nav {
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: bold;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
-    animation: fadeInUp 1s ease-out 0.2s both;
-    letter-spacing: 2px;
+    animation: fadeInUp 1.2s ease-out 0.2s both;
+    letter-spacing: 1px;
 }
 
 .home-content p {
     font-size: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    animation: fadeInUp 1s ease-out 0.4s both;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1.2s ease-out 0.4s both;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .navTrigger {
@@ -430,9 +431,10 @@ nav {
 .nav {
     padding-top: 20px;
     padding-bottom: 20px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    animation: slideDown 0.6s ease-out;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    animation: slideDown 0.8s ease-out;
+    border-bottom: 2px solid rgba(255, 107, 157, 0.2);
 }
 
 .nav div.main_list ul li {

@@ -27,14 +27,14 @@
         <nav class="nav">
             <div class="container" id="X_name" style="display: flex; justify-content: space-between;" >
                 <div class="logo" >
-                    <a href="#movedToLink" > <P>DISTRICT X</P></a>
+                    <a href="#moveToLink" > <P>DISTRICT X</P></a>
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#moveToLink">About</a></li>
+                        <li><a href="#move2Link">Portfolio</a></li>
+                        <li><a href="#move3Link">Services</a></li>
+                        <li><a href="#move4Link">Contact</a></li>
                     </ul>
                 </div>
                 <span class="navTrigger">
@@ -75,7 +75,7 @@
 
 
 <!-- Featured 1-->
-<section class="py-3 py-md-5 py-xl-8 bg-light" id="movedToLink">
+<section class="py-3 py-md-5 py-xl-8 bg-light" id="moveToLink">
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -238,7 +238,7 @@
 
 
 <!-- Card Section -->
-<section class="py-3 py-md-5 py-xl-8 bg-light">
+<section class="py-3 py-md-5 py-xl-8 bg-light" id="move2Link">
 <h1>Our Commitment To Quality</h1><br>
 <!-- Card 1 -->
 <div class="card mb-3" ">
@@ -353,7 +353,7 @@
 </section>
 
 <!-- About Me -->
-<section id="about-section" class="pt-5 pb-5">
+<section id="about-section" class="pt-5 pb-5" id="move3Link">
     <div class="container wrapabout">
         <div class="red"></div>
         <div class="row">
@@ -372,9 +372,9 @@
                         </p>
                         
                         <div class="sosmed-horizontal pt-3 pb-3">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="https://www.facebook.com/blaq.amaru.39/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/blaq.amaru.39/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.pinterest.com/blaq.amaru.39/" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest"></i></a>
                             
                         </div>
                         <a href="#" class="btn rey-btn mt-3">Follow Us</a>
@@ -394,7 +394,7 @@
     
     
      <!-- Forms -->
-    <section class="py-3 py-md-5 py-xl-8" >
+    <section class="py-3 py-md-5 py-xl-8" id="move4Link" >
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -583,6 +583,11 @@
 <!-- project scripts -->
 <script src="script.js"></script>
 
+<!-- Auto-update copyright year -->
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
 <footer class="footer-section">
     <div class="container">
         <div class="row mb-5">
@@ -592,16 +597,16 @@
                 <p class="footer-description">Your ultimate destination for curated fashion and lifestyle products. Shop with confidence, style with passion.</p>
                 <!-- Social Media Icons -->
                 <div class="social-icons">
-                    <a href="#" class="social-icon" title="Facebook">
+                    <a href="https://www.facebook.com/blaq.amaru.39/" class="social-icon" title="Facebook" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="#" class="social-icon" title="Twitter">
+                    <a href="https://x.com/Samuel_Shakurr" class="social-icon" title="Twitter" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a href="#" class="social-icon" title="Instagram">
+                    <a href="https://www.instagram.com/blaq.amaru.39/" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-icon" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/samuel-danso-832092278/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -611,10 +616,10 @@
             <div class="col-12 col-md-4 mb-4 mb-md-0">
                 <h5 class="footer-title">Quick Links</h5>
                 <ul class="footer-links">
-                    <li><a href="#movedToLink">Featured</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#moveToLink">Featured</a></li>
+                    <li><a href="#move2Link">Portfolio</a></li>
+                    <li><a href="#move4Link">Services</a></li>
+                    <li><a href="#move3Link">About Us</a></li>
                 </ul>
             </div>
 
@@ -636,7 +641,7 @@
         <!-- Bottom Section -->
         <div class="row align-items-center py-4">
             <div class="col-12 col-md-6 text-center text-md-start">
-                <p class="footer-copyright mb-0">&copy; 2024 District X. All rights reserved.</p>
+                <p class="footer-copyright mb-0">&copy; <span id="current-year"></span> District X. All rights reserved.</p>
             </div>
             <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
                 <p class="footer-credit mb-0">Crafted with <i class="fa fa-heart" style="color: #FF6B9D;"></i> by District X Team</p>
