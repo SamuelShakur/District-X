@@ -381,7 +381,6 @@ nav {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(assets/clothes/thumbnails/HBackg.jpg);
      background-blend-mode: darken;
-     
      background-attachment: scroll;
      background-position: center top;
      background-size: cover;
@@ -1199,13 +1198,18 @@ section.py-3.py-md-5.py-xl-8.bg-light .container {
 /* ===== ELEGANT FOOTER STYLING ===== */
 
 .footer-section {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: #e0e0e0;
     padding: 60px 0 0 0;
     margin-top: 80px;
     border-top: 3px solid;
     border-image: linear-gradient(90deg, #FF6B9D, #FFD93D) 1;
     position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),url(assets/clothes/thumbnails/HBackg.jpg);
+    background-size: cover;
+    background-position: center;
+     background-attachment: fixed;
+     background-blend-mode: darken;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .footer-section::before {
