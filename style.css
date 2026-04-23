@@ -40,12 +40,6 @@
                 overflow-x: hidden;
             }
 
-        header {
-           
-            
-           
-        }
-    
                
         .logo{
            font-size: 1.5rem;
@@ -85,7 +79,7 @@
         header {
             /* transparent navbar */
            
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.4.1&auto=format&fit=crop&w=1500&q=80);
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/clothes/thumbnails/HBackg.jpg);
                 background-blend-mode: darken;
                 background-color: rgba(0, 0, 0, 0.25);
                 background-position: center;
@@ -241,17 +235,22 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0,0,0,0.25);
     background-blend-mode: darken;
     line-height: 30px;
     text-align: center;
     padding-left: 3rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+     -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+    animation: slideDown 0.8s ease-out;
+    border-bottom: 2px solid rgba(255, 107, 157, 0.2);
+        
 }
 
 .nav div.logo a {
@@ -380,9 +379,9 @@ nav {
 .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(assets/clothes/thumbnails/HBackg.jpg);
      background-blend-mode: darken;
-     background-color: rgba(0,0,0,0.25);
+     
      background-attachment: scroll;
      background-position: center top;
      background-size: cover;
@@ -428,14 +427,6 @@ nav {
    display: none;
 }
 
-.nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    animation: slideDown 0.8s ease-out;
-    border-bottom: 2px solid rgba(255, 107, 157, 0.2);
-}
 
 .nav div.main_list ul li {
     animation: navFloat 3s ease-in-out infinite;
@@ -540,9 +531,6 @@ nav {
     }
 }
 
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 
 .navTrigger {
     cursor: pointer;
