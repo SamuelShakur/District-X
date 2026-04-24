@@ -35,7 +35,7 @@
 
 
 
-     @media screen and (max-width: 768px) {
+     @media screen and (max-width: 640px) {
         body {
                 overflow-x: hidden;
             }
@@ -43,7 +43,7 @@
         header {
     /* transparent navbar */
 
-             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/clothes/thumbnails/HBackg.jpg);
+             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(assets/clothes/thumbnails/HBackg.jpg);
              background-blend-mode: darken;
              background-color: rgba(0, 0, 0, 0.25);
              background-position: center;
@@ -93,7 +93,7 @@
         header {
             /* transparent navbar */
            
-                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/clothes/thumbnails/HBackg.jpg);
+                background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(assets/clothes/thumbnails/HBackg.jpg);
                 background-blend-mode: darken;
                 background-color: rgba(0, 0, 0, 0.25);
                 background-position: center;
@@ -249,7 +249,7 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3));
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
@@ -393,7 +393,7 @@ nav {
 .home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(assets/clothes/thumbnails/HBackg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(assets/clothes/thumbnails/HBackg.jpg);
      background-blend-mode: darken;
      background-attachment: scroll;
      background-position: center top;
