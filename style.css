@@ -281,10 +281,21 @@ nav {
     transform: scale(1.05);
 }
 
+.nav div.logo {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+   
+}
+
 .nav div.main_list {
     height: 65px;
     float: right;
-    
+    margin-left: auto;
+    padding-right: 3rem;
+     -webkit-transition: all 0.5s ease;
+     transition: all 0.5s ease;
 }
 
 .nav div.main_list ul {
@@ -300,7 +311,7 @@ nav {
     width: auto;
     height: 65px;
     padding: 0;
-    padding-right: 3rem;
+    padding-right: 2rem;
 }
 
 .nav div.main_list ul li a {
